@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+:root {
+  --Orange: hsl(26, 100%, 55%);
+  --Pale-Orange: hsl(25, 100%, 94%);
+
+  --Very-dark-blue: hsl(220, 13%, 13%);
+  --Dark-grayish-blue: hsl(219, 9%, 45%);
+  --Grayish-blue: hsl(220, 14%, 75%);
+  --Light-grayish-blue: hsl(223, 64%, 98%);
+  --White: hsl(0, 0%, 100%);
+  /*   --Black (with 75% opacity for lightbox background): hsl(0, 0%, 0%); */
+}
+
+body {
+  min-height: 130vh;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  height: 130px;
+  justify-content: space-between;
+  padding: 2.5rem;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  margin-left: 1rem;
+}
+
+ul li {
+  display: flex;
+  padding-left: 0.5rem;
+  margin-left: 3rem;
+  font-size: 18px;
+  color: var(--Grayish-blue);
+  cursor: pointer;
+}
+
+.navbar-left {
+  display: flex;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.cart,
+.avatar {
+  cursor: pointer;
+}
+
+hr {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  background-color: black;
+  opacity: 0.3;
+}
+
+.main-cont-left .img1 {
+  margin: 5rem;
+  margin-bottom: 2rem;
+  margin-left: 12rem;
+  height: 500px;
+  border-radius: 20px;
+}
+
+.products {
+  display: flex;
+  margin-left: 12rem;
+  gap: 2rem;
+  border-radius: 20px;
+}
+
+.products img {
+  border-radius: 10px;
+}
+
+.products1,
+.products2,
+.products3,
+.products4 {
+  cursor: pointer;
+}
+
+.products1:hover {
+  outline: 3px var(--Orange) solid;
+  border-radius: 10px;
+  height: 100px;
+  /* opacity: 0.4; */
+}
+.products1 img:hover {
+  /* outline: 2px solid var(--Orange); */
+  opacity: 0.4;
+}
+
+.container {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.main-cont-right {
+  margin-top: 10rem;
+  margin-left: 3rem;
+  margin-right: 10rem;
+}
+
+.p1 {
+  text-transform: uppercase;
+  color: var(--Orange);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.titulo {
+  margin-bottom: 2.5rem;
+  padding-right: 2rem;
+  font-size: 2.5rem;
+}
+
+.p2 {
+  margin-bottom: 2rem;
+  padding-right: 1rem;
+  word-spacing: 2px;
+  color: var(--Dark-grayish-blue);
+}
+
+.precio {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.container-precio {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.porciento {
+  background-color: var(--Pale-Orange);
+  color: var(--Orange);
+  font-weight: 700;
+  height: 30px;
+  width: 50px;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.precio-ant {
+  color: var(--Grayish-blue);
+  text-decoration: line-through;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+.caja1 {
+  height: 60px;
+  width: 170px;
+  border-radius: 10px;
+  background-color: var(--Light-grayish-blue);
+  font-weight: 700;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menos,
+.mas {
+  cursor: pointer;
+}
+
+.cajas-container {
+  display: flex;
+}
+
+.caja2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  height: 55px;
+  width: 270px;
+  background-color: var(--Orange);
+  color: var(--White);
+  font-weight: 700;
+  border-radius: 10px;
+  margin-left: 1rem;
+  cursor: pointer;
+  box-shadow: 0 20px 100px var(--Orange);
+}
